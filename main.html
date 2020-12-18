@@ -3,125 +3,21 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <html>
     <head>
-    <link rel="stylesheet" href="css/reset.css">
-        <style>
-            body{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-            }
-            main{
-                width: 500px;
-                background-color: gray;
-                display: flex;
-                justify-content: center;
-                flex-direction: column 
-            }
-            section{
-                width: 100%;
-                flex: 0;
-                display: flex;
-                text-align: center;
-                justify-content: center;
-                flex-direction: column;
-                
-            }
-            img{
-               width: 100%;
-               border-radius: 50%;
-           }
-           #img{
-               width: 50%;
-               border-radius: 50%;
-           }
-           #img:hover{
-                animation: spin 1s ;
-           }
-
-           @keyframes spin {
-            0%{ transform: rotate( 0deg);}
-            100%{ transform: rotate( 360deg);}
-        }
-
-
-
-        .scene {
-        width: 500px;
-        height: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        perspective: 600px;
-        perspective-origin: left bottom;
-        border: 1px solid #c3598a;
-
-        }
-
-        .cube {
-            width: 100px;
-            height: 100px;
-            
-            position: relative;
-            transform-style: preserve-3d;
-            transform:  translateZ(-50px);
-            animation: spinXY 3s infinite linear ;
-        }
     
-        @keyframes spinXY {
-            0%{ transform: rotateY( 0deg) rotateX( 0deg) ;}
-            100%{ transform:  rotateY( 360deg) rotateX( 360deg) ;}
-        }
-
-        .cube__face {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            border: 2px solid black;
-            font-size: 15px;
-            font-weight: bold;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .cube__face--front  { background: hsla(  0, 100%, 50%, 0.7); }
-        .cube__face--right  { background: hsla( 60, 100%, 50%, 0.7); }
-        .cube__face--back   { background: hsla(120, 100%, 50%, 0.7); }
-        .cube__face--left   { background: hsla(180, 100%, 50%, 0.7); }
-        .cube__face--top    { background: hsla(240, 100%, 50%, 0.7); }
-        .cube__face--bottom { background: hsla(300, 100%, 50%, 0.7); }
-
-        .cube__face--front  { 
-            transform: rotateY( 0deg) translateZ(50px); }
-        .cube__face--right  {
-            transform: rotateY( 90deg) translateZ(50px); }
-        .cube__face--back   { 
-            transform: rotateY(180deg) translateZ(50px); }
-        .cube__face--left   { 
-            transform: rotateY(-90deg) translateZ(50px); }
-        .cube__face--top    { transform: rotateX( 90deg) translateZ(50px); }
-        .cube__face--bottom { transform: rotateX(-90deg) translateZ(50px); }
-
-        @media (max-width: 600px) {
-            body {
-                background-color: blue;
-            }
-        }
-        </style>
+    <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <main>
             <section>
-                <h1>김승민</h1>
-                <img id="img" src="img/photo.jpg">
+                <div><img id="img" src="img/photo.jpg"></div>
+                <h1 id="name">김승민</h1>
             </section>
-            <section>
+            <section class="info" >
                 <a id="phone"  href ="tel:01080305344">전화</a>
                 <a id="email" href ="mailto:a7965344@gmail.com">이메일</a>
             </section>
             <section>
-                <table border="1">
+                <table>
                     <h1>학력</h1>
                     <th>기간</th>
                     <th>학교명</th>
@@ -140,18 +36,20 @@
                  </table>
             </section>
             <section>
+                <h1>프로젝트</h1>
                     <dl>
                         <dt>블록체인 기술을 활용한 해외직구 거래 시스템 설계 </dt>
-                        <dd>현재 진행중인 프로젝트 </dd>
+                        <dd>-현재 진행중인 프로젝트 </dd>
 
                         <dt>크롬 확장프로그램 기반 플랫폼 통합 검색어 추천 서비스</dt>
-                        <dd>2020년 진행한 확장프로그램 기반 검색어 추천 서비스.</dd>
+                        <dd>-2020년 진행한 확장프로그램 기반 검색어 추천 서비스.</dd>
                     
                         <dt>제주 대중교통 버스 운행의 빅데이터 분석</dt>
-                        <dd>2019년 진행한 제주 대중교통 버스 운행의 빅데이터 분석 프로젝트.</dd>
+                        <dd>-2019년 진행한 제주 대중교통 버스 운행의 빅데이터 분석 프로젝트.</dd>
                     </dl>
             </section>
             <section class="scene">
+                <h1> 핵심 키워드</h1>
                 <div class="cube">
                     <div class="cube__face cube__face--front">블록체인</div>
                     <div class="cube__face cube__face--back">컴퓨터교육</div>
@@ -162,7 +60,8 @@
                   </div>
             </section>
             <section class="scene">
-                <div class="cube">
+                <h1> 사진</h1>
+                <div class="cube2">
                     <div class="cube__face cube__face--front"><img src="img/photo.jpg"></div>
                     <div class="cube__face cube__face--back"><img src="img/photo.jpg"></div>
                     <div class="cube__face cube__face--right"><img src="img/photo.jpg"></div>
