@@ -13,9 +13,10 @@ body{
 }
 
 main{
+    margin-top: 1000px;
     padding: 5px;
-    border: 3px solid black;
-    border-radius: 10%;
+    border: 5px solid black;
+    border-radius: 20px;
     width: 800px;
     display: flex;
     justify-content: center;
@@ -23,7 +24,6 @@ main{
     
 }
 section{
-    
     width: 100%;
     flex: 0;
     display: flex;
@@ -32,6 +32,8 @@ section{
     justify-content: center;
     
 }
+
+
 
 a{
     width: 50%;
@@ -45,6 +47,7 @@ div{
 }
 
 #name{
+    border-radius: 20px;
     font-size: 40px;
     font-weight: bold;
     
@@ -166,7 +169,7 @@ transform: rotateY(-90deg) translateZ(50px); }
 
 @media (max-width: 1000px) {
 main {
-    margin-top: 700px;
+    margin-top: 1200px;
     width: 400px;
 }
 }
