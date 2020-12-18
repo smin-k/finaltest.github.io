@@ -27,10 +27,8 @@ section{
     width: 100%;
     flex: 0;
     display: flex;
-    
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
 
@@ -200,9 +198,15 @@ dt{
     margin-top: 5px;
 }
 
-dd{
-    
-    
+dd{ 
     font-size: 18px;
     margin-top: 5px;
+}
+
+ol{
+    width: 70%;
+}
+li{
+    font-size: 25px;
+    font-weight: bold;
 }
